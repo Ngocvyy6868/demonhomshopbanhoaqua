@@ -1,0 +1,136 @@
+
+ 
+/*---------------------------------------------------------------- Phần Liên hệ----------------------------------------------------------- */
+.top_lienhe{
+    display: flex;
+    width: 100%;
+    justify-content:space-evenly;
+
+}
+.lienhe
+{
+    position: relative;
+    top: 300px;
+    height: 1700px;
+}
+.icon_lh{
+ 
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom,rgb(120, 255, 129), rgb(6, 180, 47),rgb(139, 255, 163),rgb(231, 255, 233));
+    position: relative;
+}
+
+.icon_lh i{
+    position: absolute;
+    top: 38px;
+    left: 38px;
+    font-size: 40px;
+
+}
+.lienhe_text{
+    margin-left: -40px;
+    margin-top: 20px;
+    line-height: 30px;
+   
+}
+.lienhe_text p
+{   
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom,rgb(120, 255, 129), rgb(109, 255, 143),rgb(139, 255, 163),rgb(231, 255, 233));
+}
+.map_lienhe{
+    width: 1200px;
+    height: 600px;
+    position: relative;
+    left: 160px;
+    top: 30px;
+}
+.map_lienhe iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.thongtin_lienhe{
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+    margin-left: 150px;
+}
+.thongtin_lienhe h1{
+    text-align: center;
+    margin-left: -220px;
+}
+.thongtin_lienhe p{
+    text-align: center;
+    margin-left: -200px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.form_lienhe{
+    margin-left: 120px;
+    
+}
+.form_lienhe input{ 
+border-style: groove;
+    
+}
+.thongtin_lienhe p 
+{
+   color:red ;
+}
+.thongtin_lienhe #ten_lienhe{
+    width: 500px;
+    height: 40px;
+    border-radius: 30px;
+    padding: 5px 40px;
+    font-size: 18px;
+}
+.thongtin_lienhe #number_lienhe{
+    width: 470px;
+    height: 40px;
+    border-radius: 30px;
+    padding: 5px 40px;
+    font-size: 18px;
+    margin-left: 20px;
+}
+.thongtin_lienhe #email_lienhe{
+    width: 1000px;
+    height: 40px;
+    border-radius: 30px;
+    padding: 5px 40px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.thongtin_lienhe #text_lienhe{
+    width: 1000px;
+    height: 80px;
+    border-radius: 30px;
+    padding: 5px 40px 30px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.thongtin_lienhe #btn_lienhe{
+    width: 150px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-left: 400px;
+    margin-top: 20px;
+}
+
+#btn_lienhe
+{   
+    position: relative;
+    left: 30px;
+    background-image: linear-gradient(to bottom,rgb(255, 34, 42), #d37134);
+}
+#btn_lienhe:hover
+{
+    background-image: linear-gradient(rgb(255, 7, 7), #444444);
+    color: var(--pramiry-color);
+}
+        
+
+

@@ -1,0 +1,88 @@
+.main_thongtin{
+    
+    margin-top: 50px;
+    top: 300px;
+    margin-left: 25%;
+    width: 50%;
+    position: relative;
+}
+.main_thongtin h1{
+    color: #f1f1f1;
+    text-shadow: 0 0 10px rgba(237, 237, 237, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.897),
+    0 0 30px rgba(255, 255, 255, 0.8),
+    0 0 40px rgba(255, 255, 255, 0.8);
+    margin-left: 100px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 500px;
+    height: 60px;
+    padding: 13px;
+    text-align: center;
+    background-image: linear-gradient(to bottom,rgb(255, 188, 139), rgb(184, 11, 11),rgb(225, 4, 8),rgb(166, 228, 255));
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.thongtindonhang h2
+{   
+    border-radius: 20px;
+    color: #f1f1f1;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 10px rgba(237, 237, 237, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.897),
+    0 0 30px rgba(255, 255, 255, 0.8),
+    0 0 40px rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    background-size: 150% 150%;
+    width: 700px;
+}
+th {
+    background-image: linear-gradient(to bottom,rgb(255, 63, 63), rgb(255, 122, 122));
+    padding: 10px;
+}
+
+th,
+td {
+    border: 1px #ffffff solid;
+    text-align: center;
+}
+
+td div {
+    width: calc(100% - 20px);
+    padding: 0px 10px;
+    text-align: right;
+}
+
+th div {
+    width: calc(100% - 10px);
+    padding: 0px 5px;
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+td img {
+    width: 100px;
+}
+.btn_dathang{
+    margin-top: 10px;
+    margin-left: 40%;
+}
+.dongy {
+    width: 150px;
+    border: 1px #F90 solid;
+    background-image: linear-gradient(#F90, #F60);
+    padding: 10px;
+    border-radius: 5px;
+    color: #FFF;
+    font-weight: bold;
+}
+.dongy:hover {
+    background-image: linear-gradient(#F30, #000);
+}
