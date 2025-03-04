@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="style/sanpham.css">
+    <link rel="stylesheet" href="./style/dangky.css">
+    <link rel="stylesheet" href="dangnhap.html">
+    <link rel="stylesheet" href="style/donhang.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>don hang</title>
+</head>
+
+<body>
+    <header >
+        <div class="topHeader">
+            <img src="./img/noel.jpg" alt="">
+        </div>
+
+        <div class="header">
+            <div class="search">
+                <input type="text" id="search-text" placeholder="Tìm kiếm"> 
+                <a href="./index.html">
+                    <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </a>
+            </div>
+            <div class="fruit-fresh">
+                <img src="./img/fruitfreshps.png" alt="ff">
+                <h1 class="fruit-fresh-text">  Fruit Family tự tin đảm bảo sức khỏe người tiêu dùng !   </h1>
+            </div>
+            <div class="logo">
+                <a href="./index.html">
+                    <div id="colorful">
+                        <span class="colorful-text" >Fruit</span>
+                    </div>
+                    <img src="./img/4i.png" alt="">
+                </a>
+            </div>
+            
+            <div class="item">
+                <div class="phone">
+                    <a href="">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <p>1900 1012</p>
+                    </a>
+                </div>
+                <div class="submit">
+                    <a href="./dangnhap.html">
+                    <i class="fa-regular fa-user"></i>               
+                    </a>
+                </div>
+            
+                <div class="giohang" style="display: flex;">
+                    <a onclick="showgiohang()">
+                        <i class="fa-solid fa-cart-shopping">
+                            <span id="countsp">0</span>
+                        </i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="menu">
+                <ul class="bar-menu">
+                    <li><a href="./index.html">Trang chủ</a></li>
+                    <li id="">
+                        <a href="./sanpham.html">Sản phẩm</a> </li>
+                    <li><a href="./gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="./lienhe.html">Liên hệ</i></a></li>
+                </ul>
+        </div>
+    </header>
+    <div class="main_thongtin">
+        <div class="camon">
+            <h1>THANH TOÁN THÀNH CÔNG</h1>
+        </div>
+        <div class="thongtindonhang">
+            <h2>THÔNG TIN KHÁCH HÀNG</h2>
+            <table class="thongtinnhanhang">
+                <tbody id="thongtinnhanhang">
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="chitietgiohang">
+            <h2>GIỎ HÀNG</h2>
+            <table>
+                <tr>
+                    <th>STT</th>
+                    <th>Hình</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Đơn giá</th>
+                    <th>Số lượng</th>
+                    <th>Thành tiền ($)</th>
+                </tr>
+                <tbody id="cart">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="footer">
+        
+        <div class="text-footer">
+            <h1> Liên hệ</h1>
+            <ul>   
+                <li><a href=""><i class="fa-solid fa-store" style="color: #ffffff;"></i>:200 Vĩnh Viễn,P4,Q10,TP.HCM</a></li>
+                <li><a href=""><i class="fa-solid fa-hotel" style="color: #ffffff;"></i>: 193 Đ.Độc Lập,Tân Quý,Tân Phú,TP.HCM</a></li>
+                <li><a href=""><i class="fa-solid fa-phone" style="color: #ffffff;"></i>: 0999333999 </a></li>
+                <li><a href=""><i class="fa-regular fa-envelope" style="color: #ffffff;"></i>:FruitFamily@gmail.com</a></li>
+            </ul>
+            <!-- icon -->
+            <div class="parent">
+                <div class="child child-1">
+                  <button class="button btn-1">
+                    <a href="https://twitter.com/FruitFreshShop"><i id="iconmxh" class="fa-brands fa-square-twitter" style="color: #0ab6ff;"></i></a>
+                </button>
+                </div>
+                <div class="child child-2">
+                  <button class="button btn-2">
+                  <a href="https://web.facebook.com/profile.php?id=61554543729469&mibextid=ZbWKwL&_rdc=1&_rdr">  <i id="iconmxh" class="fa-brands fa-square-facebook" style="color: #2977ff;"></i>  </a>
+                  </button>
+                </div>
+                <div class="child child-3">
+                  <button class="button btn-3">
+                   <a href="https://www.instagram.com/fruitfamily40/"> <i id="iconmxh" class="fa-brands fa-instagram" style="color: #ffb22e;"></i></a>
+                </button>
+                 </div>
+                <div class="child child-4">
+                  <button class="button btn-4">
+                  <a href="https://www.pinterest.com/FRUIT_FAMILY/"><i id="iconmxh" class="fa-brands fa-pinterest" style="color: #ff3838;"></i></a>
+                  </button>
+                </div>
+            </div>
+        </div>
+        <div class="text-footer">
+            <h1> Về chúng tôi</h1>
+            <ul>
+             
+                <li><a href="./sanpham.html">Hoa quả sạch</a></li>
+                <li><a href="./sanpham.html">Chất lượng</a></li>
+                <li><a href="./sanpham.html">Tươi Mát</a></li>
+                <li><a href="./sanpham.html">Tiện lợi</a></li>
+            </ul>
+        </div>
+        <div class="text-footer">
+            <h1> Danh mục</h1>
+            <ul>
+                <li><a href="./index.html">Trang chủ</a></li>
+                <li><a href="./sanpham.html">Sản phẩm</a></li>
+                <li><a href="./gioithieu.html">Giới thiệu</a></li>
+                <li><a href="./lienhe.html">Liên Hệ</a></li>
+            </ul>
+        </div>
+        <div class="text-footer">
+            <h1>Chính sách bán hàng</h1>
+            <ul>
+                <li><a href="./gioithieu.html">Chất Lượng và Cam Kết</a></li>
+                <li><a href="./gioithieu.html">Giao Hàng Tiêu Chuẩn</a></li>
+                <li><a href="./gioithieu.html">Đổi Trả và Hoàn Tiền</a></li>
+                <li><a href="./gioithieu.html">Bảo Mật</a></li>
+            </ul>
+        </div>
+        <div class="text-footer">
+            <h1 class="map">Map </h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2418540771814!2d106.62593377460344!3d10.792779458892777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752db400005f01%3A0x29c970609698f1e1!2zSG9hIHF14bqjIFPDoGkgR8Oybg!5e0!3m2!1svi!2s!4v1702405294488!5m2!1svi!2s" width="330px" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="end"> <p>@Website thuộc quyền sở hữu công ty Fruit Family 2023</p></div>
+    </div>
+    <script src="./java/giohang.js"></script>
+    <script>showthanhtoan();</script>
+    <script>
+        showthongtinnguoinhan();
+    </script>       
+</body>
+
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/sanpham.css">
+    <link rel="stylesheet" href="./style/gioithieu.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./java/giohang.js"></script>
+</head>
+<body>
+    <header >
+        <div class="topHeader">
+            <img src="./img/noel.jpg" alt="">
+        </div>
+
+        <div class="header">
+            <div class="search">
+                <input type="text" id="search-text" placeholder="Tìm kiếm"> 
+                <a href="./index.html">
+                    <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </a>
+            </div>
+            <div class="fruit-fresh">
+                <img src="./img/fruitfreshps.png" alt="ff">
+                <h1 class="fruit-fresh-text">  Fruit Family tự tin đảm bảo sức khỏe người tiêu dùng !   </h1>
+            </div>
+            <div class="logo">
+                <a href="./index.html">
+                    <div id="colorful">
+                        <span class="colorful-text" >Fruit</span>
+                    </div>
+                    <img src="./img/4i.png" alt="">
+                </a>
+            </div>
+            
+            <div class="item">
+                <div class="phone">
+                    <a href="./lienhe.html">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <p>1900 1012</p>
+                    </a>
+                </div>
+                <div class="submit">
+                    <a href="./dangnhap.html">
+                    <i class="fa-regular fa-user"></i>               
+                    </a>
+                </div>
+            
+                <div class="giohang" style="display: flex;">
+                    <a onclick="showgiohang()">
+                        <i class="fa-solid fa-cart-shopping">
+                            <span id="countsp">0</span>
+                        </i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- --------------------------------------------------- -->
+        <div class="menu">
+                <ul class="bar-menu">
+                    <li><a href="./index.html">Trang chủ</a></li>
+                    <li id="">
+                        <a href="./sanpham.html">Sản phẩm</a> </li>
+                    <li><a href="./gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="./lienhe.html">Liên hệ</i></a></li>
+                </ul>
+        </div>
+    </header>
+    <!-- -------------------------------------------------------- -->
+    <div id="showgiohang">
+        <table>
+            <tr>
+                <th>STT</th>
+                <th>Hình</th>
+                <th>Tên sản phẩm</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền ($)</th>
+                <th>Xóa</th>
+            </tr>
+                <tbody id="cart">
+                </tbody>
+            <tr>
+                <td colspan="7"style="height: 50px; background-color: #f35252;">
+                    <a href="./thanhtoan.html" >
+                        <button style="width: 200px;height: 30px; border-radius: 5px;">THANH TOÁN</button>
+                    </a>
+                    <button id="xoatatca" onclick="xoatatca()">Xóa tất cả</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- -----------------------------------giơi thieu--------------------------------------- -->
+
+
+    <div class="gioithieu">
+        <div class="left-gioithieu">
+            <ul class="menu-gioithieu">
+                <li><a onclick="showgioithieu()">Giới thiệu</a></li>
+                <li><a onclick="showaboutus()">Thành viên</a></li>
+                <li><a onclick="showmuctieu()">Chức năng</a></li>
+                <li><a onclick="showykien()">Định hướng</a></li>
+                <li><a onclick="showchinhsach()">Chính sách bán hàng</a></li>
+            </ul>
+        </div>
+        <div class="center-gioithieu">
+            <div id="gioithieu">
+               
+                <h1>Fruit Family</h1>
+                <img id="gt1" src="./img/side3.jpg" alt="">
+            <p>Fruit Family được thành lập bởi một gia đình yêu trái cây và mong muốn mang đến cho mọi người những trải nghiệm tốt nhất khi thưởng thức trái cây. Chúng tôi tự hào là một trong những trang web bán trái cây uy tín hàng đầu Việt Nam, với nguồn trái cây tươi ngon, chất lượng được tuyển chọn kỹ lưỡng từ các vườn trái cây nổi tiếng trên cả nước.
+
+                Fruit Family luôn cam kết mang đến cho khách hàng những sản phẩm trái cây tươi ngon, chất lượng với giá cả hợp lý. Chúng tôi có đội ngũ nhân viên nhiệt tình, chuyên nghiệp luôn sẵn sàng hỗ trợ khách hàng mọi lúc, mọi nơi.
+                
+                Fruit Family là một gia đình, và chúng tôi luôn coi khách hàng là những thành viên của gia đình. Chúng tôi mong muốn mang đến cho khách hàng những trải nghiệm mua sắm thoải mái, thân thiện và đáng nhớ.
+                
+                Fruit Family không chỉ là nơi để bạn mua sắm, mà còn là điểm hội tụ của những người yêu thích ẩm thực và sức khỏe. Chúng tôi cung cấp thông tin hữu ích về cách chọn lựa, bảo quản và thưởng thức trái cây một cách tối ưu.
+                Hãy cùng Fruit Family mang đến những trái cây tươi ngon, bổ dưỡng cho gia đình bạn nhé!</p>  
+            </div>
+            <div id="nhanvien">
+                <h1 id="thanhvien">Thành viên</h1>
+                <div class="info">
+                    <div class="infoNv">
+                        <div class="avatar">
+                            <img src="./img/sv1.jpg" alt="">
+                        </div>
+                        <div class="thongtinSv">
+                            <p>
+                                Họ và tên: Nguyễn Thị Hồng Minh <br>
+                                Ngày sinh: 10/12/2004  <br>
+                                Nhóm: 16 <br>
+                                <p style="color:#e30d0d;font-weight: bold;    background-image: linear-gradient(to right bottom, #50bcff, #f5f5f5, #fb8eff, #ececec);"> MSSV: 22662040</p>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="infoNv">
+                        <div class="avatar">
+                            <img src="./img/sv2.jpg" alt="">
+                        </div>
+                        <div class="thongtinSv">
+                            <p>
+                                Họ và tên: Lê Đình Tiến Anh<br>
+                                Ngày sinh: 15/02/1999 <br>
+                                Nhóm: 16 <br>
+                                <p style="color:#e30d0d;font-weight: bold;    background-image: linear-gradient(to right bottom, #50bcff, #f5f5f5, #fb8eff, #ececec);"> MSSV: 22662007</p>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="infoNv">
+                        <div class="avatar">
+                            <img src="img/sv3.jpg" alt="">
+                        </div>
+                        <div class="thongtinSv">
+                            <p>
+                                Họ và tên: Nguyễn Thị Ngọc Vy <br>
+                                Ngày sinh: 28/7/2004  <br>
+                                Nhóm: 16 <br>
+                                <p style="color:#e30d0d;font-weight: bold;    background-image: linear-gradient(to right bottom, #50bcff, #f5f5f5, #fb8eff, #ececec);"> MSSV: 22662051</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="detai">LÝ DO LỰA CHỌN ĐỀ TÀI</h1>
+                <br>
+                <p> Trong thời đại công nghệ thông tin phát triển mạnh mẽ như hiện nay, thương mại điện tử đã trở thành một xu hướng tất yếu trong mọi lĩnh vực, trong đó có kinh doanh hoa quả. Một trang web bán hoa quả chuyên nghiệp sẽ giúp cho các cửa hàng hoa quả tiếp cận được với nhiều khách hàng hơn, mở rộng thị trường kinh doanh, nâng cao doanh thu và lợi nhuận. </p> <br> <br>
+                <p> Xuất phát từ nhu cầu đó, nhóm chúng em đã lựa chọn đề tài "Thiết kế website bán hoa quả" cho đồ án môn học. 
+                    Trong đồ án này, chúng em đã nghiên cứu, tìm hiểu về các kiến thức liên quan đến thiết kế website, đồng thời áp dụng những kiến thức đó để thiết kế một trang web bán hoa quả đáp ứng đầy đủ các yêu cầu về chức năng, thẩm mỹ và hiệu quả sử dụng. Tụi em cũng mong muốn mọi người có thể tiếp cận được trái cây có chất lượng và nguồn gốc hơn. Hiện nay trên thị trường có rất nhiều loại trái cây kém chất lượng một cách tràn lan, không rõ nguồn gốc, gây ảnh hưởng đến sức khỏe của mọi người.Qua Website của chúng em, mong rằng mọi người sẽ có thể tiếp cận được trái cây có chất lượng và nguồn gốc hơn, góp phần bảo vệ sức khỏe của bản thân và gia đình.</p>
+            </div>
+            <div id="muctieu">
+                <h1 id="chucnang">
+                    CHỨC NĂNG
+                </h1> <br> <br>
+                <p style="padding: 0px 30px;">
+                    Về chức năng thì trang web được thiết kế đáp ứng tối thiểu các yêu cầu cơ bản của một trang bán hàng trực tuyến, có trang chủ chính, thể hiện toàn bộ giao diện cho người dùng một cách đơn giản nhất, màu sắc nổi bật, hình ảnh được lựa chọn kĩ càng. <br>
+                    <b>Về các mục tùy chọn:</b> Trang chủ thể hiện những thông tin, ý chính cũng như về tính ăn thẩm mĩ để thu hút người mua. <br>
+                     - <b>Về sản phẩm:</b> các mục rõ ràng, hình ảnh cũng như thông tin thể hiện rõ ràng. khi đưa chuột vào ảnh sản phẩm, thông tin về tên cũng như giá sản phẩm sẽ được hiện ra. hiệu ứng chuyển mượt mà. Việc lựa chọn số lượng cũng khá đơn giản, bạn có thể nhập tùy chọn từ 1 đến 10 kg sản phẩm hoặc có thể chọn tăng giảm bằng nút bấm. <br>
+                     - <b>Về đặt hàng,</b> chỉ cẩn click thêm vào giỏ hàng thì sản phẩm sẽ được thêm vào giỏ hàng nhanh chóng. <br>
+                     - <b>Về giỏ hàng:</b> khi click vào biểu tượng giỏ hàng thì giỏ hàng sẽ tự động hiện ra, trong đó bao gồm những sản phẩm bạn đã thêm vào giỏ. Giỏ hàng hiển thị rõ thông tin về sản phẩm một cách chi tiết, có thể xóa bỏ sản phẩm vừa lựa chọn hoặc cũng có thể xóa tất cả sản phẩm có trong giỏ. <br>
+                     - <b>Về mục thanh toán:</b> Thanh toán thì cơ bản khá đơn giản, chỉ cần nhập đủ thông tin người nhận và giỏ hàng phải không để trống thì có thể đặt hàng. Khi đặt hàng thành công sẽ in ra mẫu hóa đơn thông tin người nhận và sản phẩm đã đặt hàng. <br>
+                     - <b>Về giao diện người dùng:</b> Trang đăng nhập gồm tên đăng nhập và mật khẩu, đường link đăng ký nếu bạn chưa có tài khoản. Tính năng check tài khoản, nếu tài khoản không hợp lệ, thông báo sẽ xuất hiện. Cũng như trang đăng ký, các thông tin tương tự, khi bạn nhập đầy đủ các thông tin sẽ thông báo đăng kí thành công. tương tự trang đăng kí cũng có nút quay lại trang đăng nhập. Ngoài ra còn có trang khôi phục tài khoản cho người dùng. Có hai option để lựa chọn là dùng email hoặc số đt để lấy lại. bạn chỉ cần nhập email hoặc số đt để lấy lại tài khoản. <br>
+                     Mặc dù còn nhiều thiếu sót, nhưng trong tương lai, chúng tôi có thể cải thiện nhiều hơn cho trang web hoàn chỉnh hơn. có thể sẽ hoàn thiện hơn về trang chủ, giao diện, cũng như thêm các chức năng khác nữa để phù hợp với từng giai đoạn cũng như nhu cầu sử dụng. <br>
+                     - <b>Về các khuyết điểm:</b> Trang còn chưa ổn định về các cố định trang web cũng như chuyển trang. Thiếu về mặt tin tức cũng như tính chuẩn xác. Những lỗi này chúng tôi sẽ cố gắng khắc phục trong tương lai. <br> <br>
+                </p>
+            </div>
+            <div id="ykienkhac">
+                <h1>Định Hướng Phát Triển Cho Trang Web</h1>
+                <p style="margin-top: 50px;">     
+                    <b>Mở Rộng Dải Sản Phẩm:</b>
+                    <br>
+                    Đối với sự đa dạng ngày càng tăng cao trong lối sống ăn uống, mở rộng dải sản phẩm với các loại hoa quả hiếm có, hữu cơ, và đặc sản từ các khu vực nông sản uy tín. Điều này không chỉ thu hút đối tượng khách hàng mới mà còn giữ chân những khách hàng hiện tại.
+                    <br>
+                    <b>Tối Ưu Hóa Trải Nghiệm Người Dùng:</b>
+                    Nâng cao giao diện trang web để làm cho quá trình tìm kiếm, xem sản phẩm, và đặt hàng trở nên dễ dàng hơn cho người dùng.
+                    Tích hợp tính năng tìm kiếm thông minh và hệ thống lọc linh hoạt để khách hàng có thể nhanh chóng tìm thấy và chọn lựa sản phẩm theo yêu cầu cụ thể.
+                    <br>
+                    <b>Chăm Sóc Khách Hàng Tận Tâm:</b>
+                    Xây dựng và duy trì một hệ thống chăm sóc khách hàng tích hợp để giải đáp mọi thắc mắc và hỗ trợ trong quá trình mua sắm.
+                    Thu thập phản hồi từ khách hàng để cải thiện dịch vụ và sản phẩm, đồng thời thực hiện các chương trình khuyến mãi và ưu đãi đặc biệt để tri ân khách hàng trung thành.
+                    <br>
+                    <b>Chất Lượng và Nguồn Gốc Đảm Bảo:</b>
+                    <br>
+                    Tăng cường chính sách đảm bảo chất lượng sản phẩm để xây dựng niềm tin từ phía khách hàng.
+                    Thực hiện chiến lược trong việc theo dõi và bảo vệ nguồn gốc của từng sản phẩm để đảm bảo tính minh bạch và an toàn thực phẩm. <br>
+                    <b>Thúc Đẩy Quảng Bá Thương Hiệu:</b>
+                    Tận dụng các kênh truyền thông xã hội và chiến dịch quảng cáo trực tuyến để tăng cường nhận thức về thương hiệu.
+                    Hợp tác với các đối tác và influencers trong lĩnh vực ẩm thực và làm đẹp để mở rộng mạng lưới tiếp cận khách hàng. <br>
+                    <b>Phát Triển Ứng Dụng Di Động:</b>
+                    Xây dựng ứng dụng di động để tối ưu hóa trải nghiệm mua sắm và cung cấp dịch vụ thuận tiện trên nền tảng di động.
+                    Kích thích sự tương tác và trung thành từ phía khách hàng thông qua ứng dụng, cung cấp ưu đãi đặc biệt và thông báo về khuyến mãi.
+                    <br>
+                    <b>Mở Rộng Thị Trường và Giao Hàng Nhanh:</b>
+                    Nghiên cứu và mở rộng thị trường để đáp ứng nhu cầu toàn cầu. <br>
+                    Xây dựng hệ thống giao hàng nhanh chóng và đảm bảo sự an toàn của sản phẩm trong suốt quá trình vận chuyển. <br>
+                    Bằng cách thực hiện những hướng phát triển này, trang web bán hoa quả có thể không chỉ thu hút một lượng lớn người dùng mà còn xây dựng sự độc đáo và uy tín trong thị trường trực tuyến.</p>
+                    <br> <br>
+            </div>
+            <div id="chinhsach">
+                <h1>Chính Sách Bán Hàng</h1> <br>
+                
+                <b>Chất Lượng và Cam Kết:</b>
+                <br>
+                Chúng tôi cam kết cung cấp đến khách hàng những loại hoa quả tươi ngon, chất lượng cao và đảm bảo về an toàn thực phẩm.
+                Nếu khách hàng không hài lòng với chất lượng sản phẩm, chúng tôi sẽ linh hoạt trong việc đổi trả hoặc hoàn tiền theo chính sách đổi trả của chúng tôi. <br>
+                <b>Giá Cả và Khuyến Mãi:</b>
+                <br>
+                Chúng tôi cam kết duy trì giá cả cạnh tranh và công bằng cho tất cả khách hàng.
+                Thường xuyên cung cấp các chương trình khuyến mãi, giảm giá và quà tặng đặc biệt nhằm tạo điều kiện mua sắm tích cực cho khách hàng. <br>
+                <b>Giao Hàng An Toàn và Nhanh Chóng:</b>
+                <br>
+                Hệ thống giao hàng của chúng tôi được thiết kế để đảm bảo sản phẩm được vận chuyển an toàn từ cửa hàng đến tay khách hàng.
+                Chúng tôi cam kết về thời gian giao hàng và cung cấp thông tin liên tục về tình trạng đơn hàng <br>
+                <b>Đổi Trả và Hoàn Tiền:</b>
+                <br>
+                Chính sách đổi trả linh hoạt để đảm bảo sự hài lòng của khách hàng. Khách hàng có thể đổi trả sản phẩm trong khoảng thời gian nhất định kể từ ngày nhận hàng.
+                Chúng tôi sẽ hoàn tiền hoặc đổi trả sản phẩm nếu có bất kỳ lỗi nào từ phía chúng tôi hoặc nếu khách hàng không hài lòng với sản phẩm. <br>
+                <b>Bảo Mật Thanh Toán:</b>
+                <br>
+                Chúng tôi đảm bảo an toàn thông tin thanh toán của khách hàng thông qua các phương tiện thanh toán điện tử an toàn và có uy tín.
+                Dữ liệu thanh toán được mã hóa để bảo vệ thông tin cá nhân của khách hàng. <br>
+                <b>Chăm Sóc Khách Hàng Tận Tâm:</b>
+                <br>
+                Đội ngũ chăm sóc khách hàng của chúng tôi luôn sẵn sàng giải đáp mọi thắc mắc và hỗ trợ khách hàng trong quá trình mua sắm.
+                Chúng tôi đánh giá cao mọi phản hồi từ khách hàng để không ngừng cải thiện chất lượng dịch vụ.
+                Chính sách bán hàng của chúng tôi được xây dựng với mục tiêu đặt khách hàng lên hàng đầu, đảm bảo mỗi trải nghiệm mua sắm trên trang web của chúng tôi là tích cực và đáng nhớ. <br> <br>
+            </div>
+        </div>
+    </div>
+    <div class="footer"> 
+        <div class="text-footer">
+            <h1> Liên hệ</h1>
+            <ul>   
+                <li><a href=""><i class="fa-solid fa-store" style="color: #ffffff;"></i>:200 Vĩnh Viễn,P4,Q10,TP.HCM</a></li>
+                <li><a href=""><i class="fa-solid fa-hotel" style="color: #ffffff;"></i>: 193 Đ.Độc Lập,Tân Quý,Tân Phú,TP.HCM</a></li>
+                <li><a href=""><i class="fa-solid fa-phone" style="color: #ffffff;"></i>: 0999333999 </a></li>
+                <li><a href=""><i class="fa-regular fa-envelope" style="color: #ffffff;"></i>:FruitFamily@gmail.com</a></li>
+            </ul>
+            <!-- icon -->
+            <div class="parent">
+                <div class="child child-1">
+                  <button class="button btn-1">
+                    <i class="fa-brands fa-square-twitter" style="color: #0ab6ff;"></i>
+                </button>
+                </div>
+                <div class="child child-2">
+                  <button class="button btn-2">
+                    <i class="fa-brands fa-square-facebook" style="color: #2977ff;"></i>  
+                  </button>
+                </div>
+                <div class="child child-3">
+                  <button class="button btn-3">
+                    <i class="fa-brands fa-instagram" style="color: #ffb22e;"></i>
+                </button>
+                 </div>
+                <div class="child child-4">
+                  <button class="button btn-4">
+                    <i class="fa-brands fa-youtube" style="color: #e30d0d;"></i>
+                  </button>
+                </div>
+            </div>
+        </div>
+        <div class="text-footer">
+            <h1> Về chúng tôi</h1>
+            <ul>
+             
+                <li><a href="./sanpham.html">Hoa quả sạch</a></li>
+                <li><a href="./sanpham.html">Chất lượng</a></li>
+                <li><a href="./sanpham.html">Tươi Mát</a></li>
+                <li><a href="./sanpham.html">Tiện lợi</a></li>
+            </ul>
+        </div>
+        <div class="text-footer">
+            <h1> Danh mục</h1>
+            <ul>
+                <li><a href="./index.html">Trang chủ</a></li>
+                <li><a href="./sanpham.html">Sản phẩm</a></li>
+                <li><a href="./gioithieu.html">Giới thiệu</a></li>
+                <li><a href="./lienhe.html">Liên Hệ</a></li>
+            </ul>
+        </div>
+        <div class="text-footer">
+            <h1>Chính sách bán hàng</h1>
+            <ul>
+                <li><a href="./gioithieu.html">Chất Lượng và Cam Kết</a></li>
+                <li><a href="./gioithieu.html">Giao Hàng Tiêu Chuẩn</a></li>
+                <li><a href="./gioithieu.html">Đổi Trả và Hoàn Tiền</a></li>
+                <li><a href="./gioithieu.html">Bảo Mật</a></li>
+            </ul>
+        </div>
+        <div class="text-footer">
+            <h1 class="map">Map </h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2418540771814!2d106.62593377460344!3d10.792779458892777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752db400005f01%3A0x29c970609698f1e1!2zSG9hIHF14bqjIFPDoGkgR8Oybg!5e0!3m2!1svi!2s!4v1702405294488!5m2!1svi!2s" width="330px" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="end"> <p>@Website thuộc quyền sở hữu công ty Fruit Family 2023</p></div>
+    </div>
+    <script>
+        document.getElementById("showgiohang").style.display="none";
+        document.getElementById("gioithieu").style.display="block";
+        document.getElementById("nhanvien").style.display="none";
+        document.getElementById("muctieu").style.display="none";
+        document.getElementById("ykienkhac").style.display="none";
+        document.getElementById("chinhsach").style.display="none";
+        let x = document.getElementById("gioithieu");
+        let y =  document.getElementById("nhanvien");
+        let z = document.getElementById("muctieu");
+        let s =  document.getElementById("ykienkhac");
+        let a = document.getElementById("chinhsach");
+        function showgioithieu(){
+            if(x.style.display == "block")
+            {
+                x.style.display = "block";
+            }
+            else{
+                x.style.display = "block";
+                y.style.display = "none";
+                z.style.display = "none";
+                s.style.display = "none";
+                a.style.display = "none";
+            }   
+        }
+        function showaboutus(){
+            if(y.style.display == "block")
+            {
+                y.style.display = "block";
+            }
+            else{
+                y.style.display = "block";
+                x.style.display = "none";
+                z.style.display = "none";
+                s.style.display = "none";
+                a.style.display = "none";
+            }
+        }
+        function showmuctieu(){
+            if(z.style.display == "block")
+            {
+                z.style.display = "block";
+            }
+            else{
+                z.style.display = "block";
+                y.style.display = "none";
+                x.style.display = "none";
+                s.style.display = "none";
+                a.style.display = "none";
+            }
+        }
+        function showykien(){
+            if(s.style.display == "block")
+            {
+                s.style.display = "block";
+            }
+            else{
+                s.style.display = "block";
+                y.style.display = "none";
+                z.style.display = "none";
+                x.style.display = "none";
+                a.style.display = "none";
+            }
+        }
+        function showchinhsach(){
+            if(a.style.display == "block")
+            {
+                a.style.display = "block";
+            }
+            else{
+                a.style.display = "block";
+                y.style.display = "none";
+                z.style.display = "none";
+                x.style.display = "none";
+                s.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
